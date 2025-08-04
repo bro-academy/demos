@@ -1,0 +1,55 @@
+/* Selectors */
+/* 1. Universal Selector */
+* {
+    box-sizing: border-box;
+}
+
+/* 2. Type Selector */
+p {
+    color: #555;
+}
+
+/* 3. Class Selector */
+.highlight {
+    background-color: yellow;
+}
+
+/* 4. ID Selector */
+#unique {
+    font-weight: bold;
+    color: teal;
+}
+
+/* 5. Grouping Selector */
+h1, h2, h3 {
+    text-decoration: underline 2px wavy green;
+}
+
+/* 6. Descendant Combinator */
+.box p {
+    border-left: 4px solid lightblue;
+    padding-left: 10px;
+}
+
+/* 7. Child Combinator */
+.container > div {
+    background-color: #e3f2fd;
+    margin: 5px 0;
+    padding: 10px;
+}
+
+/* 8. Adjacent Sibling Combinator */
+.sibling-example h3 + p {
+    color: darkgreen;
+}
+
+/* 9. General Sibling Combinator */
+.general-sibling h3 ~ p {
+    font-style: italic;
+}
+
+/* 10. Attribute Selector */
+[data-info] {
+    border: 1px dashed orange;
+    padding: 5px;
+}
